@@ -1,0 +1,83 @@
+{
+    "layer": "top",
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    //  "modules-center": [
+    //     "hyprland/window"
+    // ],
+    "modules-right": [
+        "cpu",
+        "memory",
+        "disk",
+        "network",
+        "pulseaudio",
+        "clock"
+    ],
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "sort-by-corrdinates": true,
+        "format-icons": {
+            "1": "󰎤",
+            "2": "󰎧",
+            "3": "󰎪",
+            "4": "󰎭",
+            "5": "󰎱",
+            "6": "󰎳",
+            "7": "󰎶",
+            "8": "󰎹",
+            "9": "󰎼",
+            "10": "󰎤",
+            "11": "󰎧",
+            "12": "󰎪",
+            "13": "󰎭",
+            "14": "󰎱",
+            "15": "󰎳",
+            "16": "󰎶",
+            "17": "󰎹",
+            "18": "󰎼",
+            "19": "󰎤",
+            "20": "󰎧",
+            "21": "󰎪",
+            "22": "󰎭",
+            "23": "󰎱",
+            "24": "󰎳",
+            "25": "󰎶",
+            "26": "󰎹",
+            "27": "󰎼",
+            "active": "󰩳"
+        },
+        "persistent-workspaces": {
+            "*": 9
+        }
+    },
+    "hyprland/window": {
+        "max-length": 50
+    },
+    "cpu": {
+        "interval": 10,
+        "format": "|   {usage}% ({avg_frequency}GHz) | ",
+        "max-length": 100
+    },
+    "memory": {
+        "interval": 10,
+        "format": "   {percentage}% ({used:0.1f}G of {total:0.1f}G) | "
+    },
+    "disk": {
+        "interval": 30,
+        "format": "   {percentage_used}% ({used} of {total}) | ",
+        "path": "/"
+    },
+    "network": {
+        "interval": 10,
+        "format": "  {bandwidthUpBytes}  {bandwidthDownBytes} {ipaddr} | "
+    },
+    "pulseaudio": {
+        "format": "   {volume}% | ",
+        "format-muted": "   0% | "
+    },
+    "clock": {
+        "format": "   {:%a %R %b/%d/%Y }"
+    }
+}

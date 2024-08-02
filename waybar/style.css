@@ -32,7 +32,7 @@ button:hover {
 }
 
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2); 
+    background: rgba(0, 0, 0, 0.2);
 }
 
 #workspaces button.focused {
@@ -44,4 +44,26 @@ button:hover {
     background-color: #6eb685;
 }
 
+#cpu {
+    color: #ffcfd2
+}
 
+#memory {
+    color: #f9fcfb
+}
+
+#disk {
+    color: #caffbf
+}
+
+#network {
+    color: #d1ebdb
+}
+
+#pulseaudio {
+    color: #fdffb6
+}
+
+#clock {
+    color: #ffc6ff
+}
