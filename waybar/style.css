@@ -1,21 +1,17 @@
 * {
     font-family: Hack Nerd Font, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.5);
-    /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
-    color: #ffffff;
+    background-color: transparent;
     transition-property: background-color;
     transition-duration: .5s;
 }
 
 button {
-    /* Use box-shadow instead of border so the text isn't offset */
     box-shadow: inset 0 -3px transparent;
-    /* Avoid rounded borders under each button name */
     border: none;
     border-radius: 0;
 }
@@ -23,6 +19,10 @@ button {
 button:hover {
     background: inherit;
     box-shadow: inset 0 -3px #ffffff;
+}
+
+#workspaces {
+    margin-left: 5px;
 }
 
 #workspaces button {
@@ -45,25 +45,38 @@ button:hover {
 }
 
 #cpu {
-    color: #ffcfd2
+    color: #ffcfd2;
 }
 
 #memory {
-    color: #f9fcfb
+    color: #f9fcfb;
 }
 
 #disk {
-    color: #caffbf
+    color: #caffbf;
 }
 
 #network {
-    color: #d1ebdb
+    color: #d1ebdb;
 }
 
 #pulseaudio {
-    color: #fdffb6
+    color: #fdffb6;
 }
 
 #clock {
-    color: #ffc6ff
+    color: #ffc6ff;
+}
+
+#workspaces,
+#cpu,
+#memory,
+#disk,
+#network,
+#pulseaudio,
+#clock {
+    background-color: rgba(43, 48, 59, 0.8);
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
 }
